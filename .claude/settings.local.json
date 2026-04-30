@@ -3,7 +3,14 @@
     "allow": [
       "Bash(npm install:*)",
       "Bash(npx tsc:*)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(python -c \"import reportlab; print\\(reportlab.Version\\)\")",
+      "Bash(python3 -c \"import reportlab; print\\(reportlab.Version\\)\")",
+      "Bash(py -c \"import reportlab; print\\(reportlab.Version\\)\")",
+      "Bash(py --version)",
+      "Bash(py -m pip install reportlab --quiet)",
+      "Bash(py -m pip install pypdf --quiet)",
+      "Bash(py -c ' *)"
     ]
   }
 }

@@ -51,10 +51,9 @@ export default function Contact() {
           ))}
         </div>
 
-        {/* Add your CV as /public/resume.pdf to activate this button */}
         <a
-          href="/resume.pdf"
-          download
+          href="/Rexford_Tenkorang_CV.pdf"
+          download="Rexford_Tenkorang_CV.pdf"
           className="inline-flex items-center gap-2 px-5 py-2.5 border border-[#222] text-[#555] text-xs font-mono rounded-sm hover:border-[#00ff88]/40 hover:text-[#00ff88] transition-colors duration-150"
         >
           <FileDown size={13} />
