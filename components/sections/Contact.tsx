@@ -52,8 +52,10 @@ export default function Contact() {
         </div>
 
         <a
-          href="/Rexford_Tenkorang_CV.pdf"
+          href="https://sioowdneqegmutkfpqqh.supabase.co/storage/v1/object/public/assets/Rexford_Tenkorang_CV.pdf"
           download="Rexford_Tenkorang_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-2.5 border border-[#222] text-[#555] text-xs font-mono rounded-sm hover:border-[#00ff88]/40 hover:text-[#00ff88] transition-colors duration-150"
         >
           <FileDown size={13} />
