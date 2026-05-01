@@ -310,6 +310,37 @@ def build_cv():
         else:
             story.append(Spacer(1, 2))
 
+    # ── CONFERENCES & EVENTS ─────────────────────────────────────────────────
+    story.append(Paragraph("CONFERENCES &amp; EVENTS", styles["section"]))
+    story.append(section_rule())
+
+    # Build with AI
+    story.append(Paragraph(
+        '<b>Build with AI – Kumasi</b> <font color="#666666">| Google Developer Groups &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; Kumasi Technical University</font>',
+        styles["sub"],
+    ))
+    conf_sessions = [
+        "Building and Customizing Your First AI Agent with Google's ADK — Umar Faruq Zubairu (GDE | CEO, Ummatore)",
+        "Building Multiagent Systems — Gbemisola Esho (GDE | CEO, Connectbridge)",
+        "Build a Stateful AI Assistant with Firebase AI Logic and Firestore — Auwal MS (GDE | Developer Rel, Moniepoint Inc)",
+    ]
+    for s in conf_sessions:
+        story.append(Paragraph(f"• {s}", styles["bullet"]))
+    story.append(Spacer(1, 4))
+
+    # Other conferences
+    other_confs = [
+        ("<b>Google DevFest</b>", "Learned about modern web technologies, cloud solutions, and app development trends."),
+        ("<b>Kumasi Connect</b>", "Attended sessions on entrepreneurship, tech innovation, and networking with local tech leaders."),
+        ("<b>Barcamp, HapaWeb, Hapaspace, Komseko</b>", "Participated in unconferences emphasising hands-on workshops, peer-to-peer learning, and community-driven tech discussions."),
+    ]
+    for title, desc in other_confs:
+        story.append(Paragraph(
+            f"{title} — {desc}",
+            ParagraphStyle("conf", fontName="Helvetica", fontSize=9,
+                           textColor=DARK, leading=13, spaceAfter=3),
+        ))
+
     # ── LANGUAGES & HOBBIES ───────────────────────────────────────────────────
     story.append(Paragraph("ADDITIONAL", styles["section"]))
     story.append(section_rule())
